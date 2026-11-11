@@ -1,0 +1,12 @@
+{
+  "name": "@axiom/core",
+  "private": true,
+  "version": "0.1.0",
+  "description": "AXIOM Core — shared scientific computation infrastructure.",
+  "license": "Proprietary",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  }
+}

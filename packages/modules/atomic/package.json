@@ -1,0 +1,12 @@
+{
+  "name": "@axiom/module-atomic",
+  "private": true,
+  "version": "0.1.0",
+  "description": "AXIOM Atomic Model Engine — Vaiśeṣika historical atomic model implementation.",
+  "license": "Proprietary",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  }
+}

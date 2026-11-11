@@ -1,0 +1,12 @@
+{
+  "name": "@axiom/visualization",
+  "private": true,
+  "version": "0.1.0",
+  "description": "AXIOM visualization utilities — 2D and 3D rendering foundations.",
+  "license": "Proprietary",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  }
+}

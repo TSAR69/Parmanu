@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --axiom-font-sans: ui-sans-serif, system-ui, -apple-system,
+      BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+      sans-serif;
+    --axiom-font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+      "Liberation Mono", monospace;
+    --axiom-bg: #0a0c11;
+    --axiom-surface: #0f1115;
+    --axiom-surface-lift: #161a22;
+    --axiom-border: #232a34;
+    --axiom-border-hover: #3a4350;
+    --axiom-text: #e8ecf1;
+    --axiom-text-muted: #8b94a2;
+    --axiom-accent: #7c8a99;
+    --axiom-accent-hover: #9fb0c1;
+    --axiom-accent-muted: #3d4650;
+    --axiom-danger: #b36b6b;
+  }
+
+  html,
+  body,
+  #__next {
+    background: var(--axiom-bg);
+    color: var(--axiom-text);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: var(--axiom-font-sans);
+    font-size: 0.875rem;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  canvas {
+    display: block;
+  }
+}
+
+@layer components {
+  .axiom-border {
+    border: 0.5px solid var(--axiom-border);
+  }
+  .axiom-border:hover {
+    border-color: var(--axiom-border-hover);
+  }
+  .axiom-surface {
+    background: var(--axiom-surface);
+  }
+  .axiom-surface-lift {
+    background: var(--axiom-surface-lift);
+  }
+  .axiom-text-muted {
+    color: var(--axiom-text-muted);
+  }
+  .axiom-accent {
+    color: var(--axiom-accent);
+  }
+  .axiom-accent-bg {
+    background: var(--axiom-accent-muted);
+  }
+  .axiom-tech-text {
+    font-family: var(--axiom-font-mono);
+    font-size: 0.8125rem;
+    letter-spacing: 0.02em;
+  }
+  .axiom-caption {
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+    letter-spacing: 0.04em;
+    color: var(--axiom-text-muted);
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

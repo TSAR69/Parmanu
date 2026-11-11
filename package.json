@@ -1,0 +1,21 @@
+{
+  "name": "axiom",
+  "private": true,
+  "version": "0.1.0",
+  "description": "AXIOM — proprietary scientific computation and simulation engine. Atomic Model Engine foundation.",
+  "license": "Proprietary",
+  "workspaces": [
+    "apps/lab",
+    "packages/core",
+    "packages/modules/atomic",
+    "packages/visualization"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=apps/lab",
+    "build": "npm run build --workspace=apps/lab",
+    "start": "npm run start --workspace=apps/lab",
+    "lint": "npm run lint --workspace=apps/lab",
+    "test": "npm run test --workspace=apps/lab",
+    "typecheck": "tsc --noEmit -p apps/lab/tsconfig.json"
+  }
+}
